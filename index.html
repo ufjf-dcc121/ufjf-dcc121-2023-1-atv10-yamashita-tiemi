@@ -17,7 +17,7 @@
         <section id="forms">
             <h1>Entrada</h1>
             <form name="entrada">
-                <label for="valor">Valor:</label>
+                <label for="valor">Valor: </label>
                 <input type="number" name="valor" id="valor" title="Valor a ser inserido">
                 <input type="submit" value="Adicionar">
             </form>
@@ -33,14 +33,6 @@
         <p>&copy; Victoria Tiemi - 2023</p>
     </footer>
 
-    <script>
-        const form = document.forms.entrada;
-        form.addEventListener('submit', send);
-
-        function send(event) {
-            event.preventDefault();
-            console.log('Formulário enviado!');
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
