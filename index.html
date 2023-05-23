@@ -32,5 +32,15 @@
     <footer>
         <p>&copy; Victoria Tiemi - 2023</p>
     </footer>
+
+    <script>
+        const form = document.forms.entrada;
+        form.addEventListener('submit', send);
+
+        function send(event) {
+            event.preventDefault();
+            console.log('Formulário enviado!');
+        }
+    </script>
 </body>
 </html>
