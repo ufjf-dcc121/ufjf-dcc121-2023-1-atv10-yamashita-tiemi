@@ -1,3 +1,12 @@
 
-const store = {state: 0};
-export default store;
+const store = {state: []};
+
+export function add(valor) {
+    if (valor != "") {
+        store.state.push(valor);
+    }
+}
+
+export function getItems() {
+    return [...store.state];
+}
