@@ -1,8 +1,7 @@
+import { state } from "./store.js";
 
 const form = document.forms.entrada;
 form.addEventListener('submit', send);
-
-let state = 0;
 
 update();
 
