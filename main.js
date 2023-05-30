@@ -1,4 +1,4 @@
-import { store } from "./store.js";
+import store from "./store.js";
 
 const form = document.forms.entrada;
 form.addEventListener('submit', send);
