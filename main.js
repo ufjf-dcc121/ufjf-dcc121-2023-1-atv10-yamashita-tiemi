@@ -4,6 +4,8 @@ form.addEventListener('submit', send);
 
 let state = 0;
 
+update();
+
 function send(event) {
     event.preventDefault();
     console.log('Formulário enviado!');
