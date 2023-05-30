@@ -10,3 +10,7 @@ export function add(valor) {
 export function getItems() {
     return [...store.state];
 }
+
+export function removeItems() {
+    store.state.pop();
+}
