@@ -1,2 +1,2 @@
 
-export let state = 0;
+export const store = {state: 0};
