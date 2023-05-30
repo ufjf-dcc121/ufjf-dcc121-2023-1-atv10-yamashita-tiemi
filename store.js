@@ -1,3 +1,3 @@
 
-const store = {state: 0};
+const store = {state: []};
 export default store;
