@@ -1,7 +1,8 @@
-import {add, getItems} from "./store.js";
+import {add, getItems, removeItems} from "./store.js";
 
 const form = document.forms.entrada;
 form.addEventListener('submit', send);
+form.remover.addEventListener('click', remover);
 
 update();
 
@@ -12,6 +13,12 @@ function send(event) {
     add(n);
     form.valor.value = "";  //limpa depois q pressiona o button
     form.valor.focus();
+    update();
+}
+
+function remover() {
+    console.log('Remove ao clicar!');
+    removeItems();
     update();
 }
 
